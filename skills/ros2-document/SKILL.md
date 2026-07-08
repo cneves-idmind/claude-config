@@ -44,7 +44,7 @@ Packages to document (submodules excluded):
 
 ### Step 2 — Dispatch one subagent per package (all in parallel)
 
-Call the Agent tool **multiple times in the same response** — one call per package. Use `subagent_type="general-purpose"` (needs Write access). Do NOT call them sequentially.
+Call the Agent tool **multiple times in the same response** — one call per package. Use `subagent_type="general-purpose"` (needs Write access) and `model="sonnet"` (documentation extraction doesn't need the top model; do not let subagents inherit a more expensive one). Do NOT call them sequentially.
 
 Each subagent receives the prompt below with `PACKAGE_PATH` substituted for the absolute path of that package.
 
