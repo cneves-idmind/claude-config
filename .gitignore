@@ -1,0 +1,10 @@
+# Ignore everything, whitelist synced config only
+*
+!.gitignore
+!CLAUDE.md
+!settings.json
+!keybindings.json
+!skills/
+!skills/**
+!agents/
+!agents/**
